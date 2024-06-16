@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Submission</title>
+</head>
+<body>
+    <form action="/persist" method="post">
+        <label for="natureza">Natureza:</label>
+        <select id="natureza" name="natureza">
+            <option value="duvida">Duvida</option>
+            <option value="resolucao">Resolucao</option>
+        </select><br>
+
+        <label for="descricao">Descricao:</label>
+        <input type="text" id="descricao" name="descricao"><br>
+
+        <label for="provedor">Provedor:</label>
+        <select id="provedor" name="provedor">
+            <option value="A">Provedor A</option>
+            <option value="B">Provedor B</option>
+            <option value="C">Provedor C</option>
+            <option value="Vazio">Nenhum</option>
+        </select><br>
+
+        <button type="submit">Registrar</button>
+        <div>
+            <a href="/list">Lista de Registros</a>
+        </div>
+    </form>
+</body>
+</html>
